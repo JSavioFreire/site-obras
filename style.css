@@ -1,0 +1,120 @@
+@charset "UTF-8";
+@font-face {
+    font-family: bebas;
+    src: url(Fontes/Bebas-Regular.otf);
+}
+:root{
+    --cor01:#DE7E35;
+    --cor02:#E3A87B;
+    --cor03:#5E3617;
+    --cor04:#5E4633;
+    --cor05:#AB6129;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    /*Cabeçalho*/
+
+header{
+    line-height: 30px;
+    width: 100%;
+    height: 30px;
+    background-color: var(--cor01);
+    color: white;
+    padding: 30px 0 ;
+    border-bottom: 2px solid var(--cor04);
+}
+header h1 {
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.43);
+    font-size: 2.5em;
+    padding-left: 50px;
+    font-family: bebas,Arial, Helvetica, sans-serif;
+}
+
+    /*Título*/
+main{
+    text-align: center;
+
+}
+#tudo{
+    max-width: 1000px;
+    display: inline-block;
+    border: 2px solid var(--cor04);
+    margin-top: 50px;
+    text-align: left;
+    min-width: 100px;
+    width: 100%;
+    display: inline-block;
+
+
+}
+
+#titulo h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px 70px;
+}
+
+    /*Contas*/
+
+#contas{
+    margin: 60px 50px;
+    
+ 
+
+}
+#contas div{
+    display: block   ;
+    padding-left: 50px;
+    margin: auto;
+    
+}
+#contas h2{
+    font-family: bebas, Arial, Helvetica, sans-serif;
+    color: var(--cor03);
+    margin-top: 10px;
+}
+#contas .cinput{
+    width: 300px;
+    height: 30px;
+    border-radius: 3px;
+    border: 2px solid black;
+}
+
+#contas #calcule{
+    height: 30px;
+    border-radius: 3px;
+    width: 150px;
+    cursor: pointer;
+    border: 2px solid black;
+    margin-top: 20px;
+
+}
+#resultado{
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    
+}
+
+::placeholder{
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+
+
+
+footer{
+    min-width: 100px;
+    background-color: var(--cor04);
+    margin-bottom: 0px;
+    margin-top: 30px;
+    height: 30px;
+    color: var(--cor02);
+    text-align: right;
+
+}
