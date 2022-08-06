@@ -54,14 +54,14 @@ main{
 
 }
 
-#titulo h1 {
+.titulo h1 {
     font-family: Arial, Helvetica, sans-serif;
     margin: 30px 70px;
 }
 
     /*Contas*/
 
-#contas{
+.contas{
     margin-bottom: 80px;
     text-align:left;
     display: inline-block;
@@ -69,18 +69,17 @@ main{
 
 }
 
-#contas div{
+.contas div{
     display: block   ;
     padding-left: 50px;
     margin: auto;
     
-}
-#contas h2{
+}.contas h2{
     font-family: bebas, Arial, Helvetica, sans-serif;
     color: var(--cor03);
     margin-top: 10px;
 }
-#contas .cinput{
+.contas .cinput{
     width: 300px;
     height: 30px;
     border-radius: 3px;
@@ -88,7 +87,7 @@ main{
     
 }
 
-#contas #calcule{
+.contas .bt{
     height: 30px;
     border-radius: 3px;
     width: 150px;
@@ -97,12 +96,12 @@ main{
     margin-top: 20px;
 
 }
-#contas #result{
+.contas .result{
     display: block;
 
     
 }
-#resultado{
+.resultado{
     text-align: center;
     font-family: arial,helvetica,sans-serif;
     margin-bottom: 10px;

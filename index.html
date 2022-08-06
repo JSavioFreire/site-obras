@@ -14,11 +14,11 @@
     </header>
         <main>
              <div id="tudo">  
-                <div id="titulo">
+                <div class="titulo">
                     <h1>Cálcule a quantidade exata de azulejos, pisos, tijolinhos ou revestimentos que você vai precisar.</h1>
                 </div>
              
-                    <div id="contas">
+                    <div class="contas">
                         <div class="perguntas">
                             <h2>Quantos metros<sup>2</sup> tem o local a ser instalado?</h2>
                             <input type="number" name="m2" id="m2" class="cinput" placeholder="Digite os metros quadrados">
@@ -32,7 +32,7 @@
                             <input type="number" name="lar" id="lar" class="cinput" placeholder="Digite a largura em centímetros">
                         </div>
                         <div>
-                            <input type="button" value="calcule" id="calcule">
+                            <input type="button" value="Cálcule" id="bt1" class="bt">
                              <div id="res">
                     
                     </div>
@@ -43,10 +43,33 @@
 
                     </div>
             
-                 <div id="result">
-                       <p id="resultado">O resultado aparecerá aqui</p>
-                                   </div>
+                 <div class="result" id="result"><p class="resultado">Resultado</p></div>
+                    
+                 
+                 <div class="contas">
+                    <div class="titulo">
+                        <h1>Não sabe quantos metros<sup>2</sup> tem o local? sem problemas.</h1>
+                    </div>
+                    <div>
+                        <h2>Altura do local</h2>
+                        <input type="number" name="alt2" id="alt2" class="cinput" placeholder="Digite a altura em centímetros">
+                    </div>
+                    <div>
+                        <h2>largura do local</h2>
+                        <input type="number" name="lar2" id="lar2" class="cinput" placeholder="Digite a largura em centímetros">
+                    </div>
+                    <div>
+                        <input type="button" value="Cálcule" id="bt2" class="bt">
+                    </div>
+
+
+                 </div>
+
+                 <div class="result" id="result2"><p class="resultado">Resultado</p></div>
                
+
+
+
         </div>
         </main>
 
@@ -55,10 +78,10 @@
     <footer>Site criado por Sávio Freire.</footer>
        
        <script>      
-        var res = document.querySelector('#calcule')
-        res.addEventListener('click',clicou)
+        var bt1 = document.querySelector('#bt1')
+        bt1.addEventListener('click',clicou1)
 
-        function clicou() {   
+        function clicou1() {   
         var metro2 = document.querySelector('#m2')
         var altura = document.querySelector('#alt')
         var largura = document.querySelector('#lar')
@@ -68,10 +91,22 @@
         var mpcm = nmetro2 * 10000
         var metro2mat = naltura * nlargura
         var resultad = mpcm / metro2mat
-        var escre = document.querySelector('#resultado')
+        var escre = document.querySelector('#result')
         escre.innerHTML = resultad
-        
-            }
+        }
+        var bt2 = document.querySelector('#bt2')
+        bt2.addEventListener('click',clicou2)
+
+        function clicou2(){
+        var n1 = document.querySelector('#alt2')
+        var n2 = document.querySelector('#lar2')
+        var nn1 = Number(n1.value)
+        var nn2 = Number(n2.value)
+        var res = nn1 * nn2
+        var local = document.querySelector('#result2')
+        local.innerHTML = res
+        }
+
             
         </script>
 </body>
