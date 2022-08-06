@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quantos tijolinhos preciso?</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="icone.png" type="image/x-icon">
+    <link rel="shortcut icon" href="Fotos/iconepinta.png" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -15,8 +15,8 @@
         <main>
              <div class="local">  
                 <div class="titulo">
-                    <h1>Cálcule a quantidade exata de azulejos, pisos, tijolinhos ou revestimentos que você vai precisar.</h1>
-                </div>
+                    <h1>Cálcule a quantidade exata de materiais que você vai precisar.</h1>
+                
              
                     <div class="contas">
                         <div class="perguntas">
@@ -39,13 +39,13 @@
                         </div>
                    
 
-
+                        <div class="result" id="result"><p class="resultado"></p></div>
 
                     </div>
             
-                 <div class="result" id="result"><p class="resultado">Resultado</p></div>
+                 
                     
-                 </div>
+                 </div></div>
 
                  <div class="local">
                      
@@ -64,10 +64,10 @@
                         <div>
                             <input type="button" value="Cálcule" id="bt2" class="bt">
                         </div>
-                     </div>
-                     <div class="result" id="result2"><p class="resultado">Resultado</p></div>
+                     
+                     <div class="result" id="result2"><p class="resultado"></p></div>
                  </div>
-
+            </div>
 
 
         
@@ -75,7 +75,7 @@
 
       
        
-    <footer>Site criado por Sávio Freire.</footer>
+    <footer><p>Site criado por Sávio Freire.</p></footer>
        
        <script>      
         var bt1 = document.querySelector('#bt1')
@@ -92,7 +92,7 @@
         var metro2mat = naltura * nlargura
         var resultad = mpcm / metro2mat
         var escre = document.querySelector('#result')
-        escre.innerHTML = resultad
+        escre.innerHTML = ('Você precisa de aproximadamente ' + resultad + ' materiais.') 
         }
         var bt2 = document.querySelector('#bt2')
         bt2.addEventListener('click',clicou2)
@@ -104,7 +104,7 @@
         var nn2 = Number(n2.value)
         var res = nn1 * nn2
         var local = document.querySelector('#result2')
-        local.innerHTML = res
+        local.innerHTML = ('O material tem ' + res + ' metros quadrados')
         }
 
             

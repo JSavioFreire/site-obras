@@ -21,20 +21,23 @@
     /*Cabeçalho*/
 
 header{
-    line-height: 30px;
+    line-height: 10px;
     width: 100%;
     height: 30px;
     background-color: var(--cor01);
     color: white;
-    padding: 30px 0 ;
+    padding: 20px 0 ;
     border-bottom: 2px solid var(--cor04);
+    display: inline-block;
 }
 header h1 {
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.43);
     font-size: 2.5em;
     padding-left: 50px;
     font-family: bebas,Arial, Helvetica, sans-serif;
+    
 }
+
 
     /*Título*/
 main{
@@ -45,17 +48,18 @@ main{
 }
 .local{
     max-width: 600px;
-    display: inline-block;
-    border: 2px solid var(--cor04);
-    margin-top: 50px;
-    text-align: left;
+    display: inline-flex;
+
     width: 100%;
     height: 600px;
+    height: 750px;
 
 
 }
 
-
+main h1{
+    height: 200px;
+}
 
 .titulo h1 {
     font-family: Arial, Helvetica, sans-serif;
@@ -67,6 +71,7 @@ main{
 .contas{
     margin-bottom: 80px;
     text-align:left;
+    margin-top: 0px;
   
  
 
@@ -74,8 +79,8 @@ main{
 
 .contas div{
     
-    padding-left: 50px;
-    margin: auto;
+    padding-left: 30px;
+    
     
 }.contas h2{
     font-family: bebas, Arial, Helvetica, sans-serif;
@@ -87,6 +92,7 @@ main{
     height: 30px;
     border-radius: 3px;
     border: 2px solid black;
+
     
 }
 
@@ -96,11 +102,13 @@ main{
     width: 150px;
     cursor: pointer;
     border: 2px solid black;
-    margin-top: 20px;
+    margin-top:50px;
 
 }
+
 .contas .result{
-    display: block;
+    display: inline-block;
+    font: normal 1em arial;
 
     
 }
@@ -108,8 +116,12 @@ main{
     text-align: center;
     font-family: arial,helvetica,sans-serif;
     margin-bottom: 10px;
+    margin-top: 50px;
 }
 
+.bt{
+    margin-bottom: 20px;
+}
 
 
 
@@ -123,11 +135,11 @@ main{
 
 footer{
     min-width: 100px;
-    background-color: var(--cor04);
+    background-color: var(--cor01);
     margin-bottom: 0px;
     margin-top: 30px;
     height: 30px;
-    color: var(--cor02);
+    color: white;
     text-align: right;
-
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.463);
 }
