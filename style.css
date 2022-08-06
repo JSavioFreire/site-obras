@@ -62,11 +62,13 @@ main{
     /*Contas*/
 
 #contas{
-    margin: 60px 50px;
-    
+    margin-bottom: 80px;
+    text-align:left;
+    display: inline-block;
  
 
 }
+
 #contas div{
     display: block   ;
     padding-left: 50px;
@@ -83,6 +85,7 @@ main{
     height: 30px;
     border-radius: 3px;
     border: 2px solid black;
+    
 }
 
 #contas #calcule{
@@ -94,12 +97,20 @@ main{
     margin-top: 20px;
 
 }
-#resultado{
-    text-align: center;
-    display: inline-block;
-    width: 100%;
+#contas #result{
+    display: block;
+
     
 }
+#resultado{
+    text-align: center;
+    font-family: arial,helvetica,sans-serif;
+    margin-bottom: 10px;
+}
+
+
+
+
 
 ::placeholder{
     font-family: Arial, Helvetica, sans-serif ;

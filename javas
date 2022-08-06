@@ -1,0 +1,15 @@
+ var res = document.querySelector('#calcule')
+        res.addEventListener('click',clicou)
+
+        function clicou() {   
+        var metro2 = document.querySelector('#m2')
+        var altura = document.querySelector('#alt')
+        var largura = document.querySelector('#lar')
+        var naltura = Number(altura.value)
+        var nlargura = Number(largura.value)
+        var metro2mat = naltura * nlargura
+        var escre = document.querySelector('#resultado')
+        escre.innerHTML = metro2mat
+        
+            }
+            
